@@ -22,7 +22,7 @@ Yes, these APIs are released by the cryptocurrency exchange markets themselves. 
 from btcTurk.py import BtcTurk
 
 btcturk = BtcTurk(your_API_key, your_API_secret)
-result = btcturk.ticker('BTC_TRY') //It will return a JSON string
+result = btcturk.ticker('BTC_TRY') #It will return a JSON string
 
 print(result)
 ```
