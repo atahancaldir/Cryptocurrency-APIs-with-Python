@@ -33,4 +33,4 @@ There are lots of functions provided from exchange markets. You can check the fu
 [Binance](https://github.com/binance/binance-spot-api-docs)
 
 # Warning :name_badge:
-These files are designed to do **REAL** transactions. Please do not use them unless you know what you do!
+These files are designed to do **REAL** transactions. Please do not use them unless you know what you're doing!
