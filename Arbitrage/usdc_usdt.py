@@ -1,12 +1,16 @@
+"""
+Simple algorithm that records the USDC/USDT price difference of Binance and BtcTurk
+"""
+
 from APIs.binance import Binance
 from APIs.btcTurk import BtcTurk
 import xlwt
 import time
 import json
 
-binance = Binance('z7S1rcFYIYSfqZ8ezf3AHpY4zzwYSMNJPHPKne5qJlkllO9lebIK5vMWJRleAlWs', '0m3GlcouShoIsoFJvAhLVi9KNod2dEpEFP11TwXv0JbHT9GHPjRVt9Iee7bSOvyx')
-
-btcturk = BtcTurk('a42db663-84df-48e9-ba57-7200093cb6ba', 'AFy2Tf/OlufIN+zTCJpiYMGbaD8nrBVA')
+# ENTER YOUR API KEY AND API SECRET BELOW
+binance = Binance(apiKey='', apiSecret='')
+btcturk = BtcTurk(apiKey='', apiSecret='')
 
 wb = xlwt.Workbook()
 ws = wb.add_sheet("USDC_USDT")

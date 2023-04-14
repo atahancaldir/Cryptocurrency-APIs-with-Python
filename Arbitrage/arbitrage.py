@@ -4,8 +4,8 @@ import json
 from datetime import datetime
 import time
 
-btcturk = BtcTurk(apiKey='',
-apiSecret='')
+# ENTER YOUR API KEY AND API SECRET BELOW
+btcturk = BtcTurk(apiKey='', apiSecret='')
 
 def tabularData(data, convertTime = True):
     try:

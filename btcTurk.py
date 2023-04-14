@@ -7,18 +7,18 @@ class BtcTurk:
         self.apiKey = apiKey
         self.apiSecret = base64.b64decode(apiSecret)
 
-    def requestData(self, createURL = True, requestType = 'GET', headers = {}, params = {}):
+    def requestData(self, createURL = True, requestType = 'GET', headers = {}, params = {}, timeout = None):
         if createURL:
             self.url = self.urlBase + self.urlMethod
 
         if requestType == 'GET':
-            self.result = requests.get(url = self.url, headers = headers, json = params)
+            self.result = requests.get(url = self.url, headers = headers, json = params, timeout = None)
         elif requestType == 'POST':
-            self.result = requests.post(url = self.url, headers = headers, json = params)  
+            self.result = requests.post(url = self.url, headers = headers, json = params, timeout = None)  
         elif requestType == 'DELETE':
-            self.result = requests.delete(url = self.url, headers = headers, json = params)
+            self.result = requests.delete(url = self.url, headers = headers, json = params, timeout = None)
         elif requestType == 'PUT':
-            self.result = requests.put(url = self.url, headers = headers, json = params)
+            self.result = requests.put(url = self.url, headers = headers, json = params, timeout = None)
             
         self.result = self.result.json()
         
@@ -33,7 +33,7 @@ class BtcTurk:
 
         return self.headers
 
-    def ticker(self, pairSymbol='', currency=''):
+    def ticker(self, pairSymbol='', currency='', timeout=None):
         '''
         If pairSymbol is not set, ticker for all pairs will be returned in a json array.
 
@@ -80,7 +80,7 @@ class BtcTurk:
         elif currency:
             self.urlMethod += '/currency?symbol=' + currency
 
-        return self.requestData()
+        return self.requestData(timeout=timeout)
 
     def trades(self, pairSymbol, last=''):
         '''

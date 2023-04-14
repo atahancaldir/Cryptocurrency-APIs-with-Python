@@ -1,10 +1,14 @@
+"""
+Simple Dogecoin trader based on treshold values
+"""
+
 from APIs.binance import Binance
 import json
 import time
 import pandas as pd
 
-b = Binance('z7S1rcFYIYSfqZ8ezf3AHpY4zzwYSMNJPHPKne5qJlkllO9lebIK5vMWJRleAlWs',
-'0m3GlcouShoIsoFJvAhLVi9KNod2dEpEFP11TwXv0JbHT9GHPjRVt9Iee7bSOvyx')
+# ENTER YOUR API KEY AND API SECRET BELOW
+b = Binance(apiKey='', apiSecret='')
 
 lowerLimit = 0.395
 upperLimit = 0.400

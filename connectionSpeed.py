@@ -26,7 +26,7 @@ def ping(host, attemptCount = 5):
 
 def compareHosts(hosts, attemptCount = 5):
     '''
-    results are based on average speed.\n
+    results are based on average speed.
     criteria can be changed from ping() function
 
     Result
