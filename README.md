@@ -1,6 +1,6 @@
 # Cryptocurrency APIs with Python 💸
 
-**The development has made in 2021-2022. Please DO NOT use the code without checking the updated API documentations! The responsibility of the consequences are on the user.**
+**The development has been done in 2021-2022. Please DO NOT use the code without checking the updated API documentations! The responsibility of the consequences are on the user.**
 
 This project includes a Python expression of some of the cryptocurrency exchange markets such as BtcTurk, Binance, etc.
 
